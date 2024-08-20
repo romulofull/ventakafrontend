@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import HouseDetails from './home';
+import ContactForm from './inquiryForm';
+
+// Datos de ejemplo
+const house = {
+  photos: [
+    './assets/imagenes/1foto.jpg',
+    './assets/imagenes/2foto.jpg',
+    // Añade más fotos aquí
+  ],
+  area: 220,
+  barrio: 'La Garzota',
+  precio: 220000
+};
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HouseDetails house={house} />
+      <ContactForm />
     </div>
   );
 }
