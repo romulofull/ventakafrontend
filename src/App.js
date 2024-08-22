@@ -1,24 +1,22 @@
-import React from 'react';
-import HouseDetails from './home';
-import ContactForm from './inquiryForm';
+import React from "react";
+import HouseDetails from "./home";
+import Formulario from './formulario';
 
-// Datos de ejemplo
 const house = {
   photos: [
-    './assets/imagenes/1foto.jpg',
-    './assets/imagenes/2foto.jpg',
-    // Añade más fotos aquí
+    "./assets/imagenes/1foto.jpg",
+    "./assets/imagenes/2foto.jpg",
   ],
   area: 220,
-  barrio: 'La Garzota',
-  precio: 220000
+  barrio: "La Garzota",
+  precio: 220000,
 };
 
 function App() {
   return (
     <div className="App">
-      <HouseDetails house={house} />
-      <ContactForm />
+    <HouseDetails house={house} />
+     <Formulario/>
     </div>
   );
 }
