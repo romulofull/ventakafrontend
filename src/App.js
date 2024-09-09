@@ -1,3 +1,4 @@
+
 import React from 'react';
 import DetallesCasa from './DetallesCasa';
 import FormularioContacto from './FormularioContacto';
@@ -8,10 +9,11 @@ const casa = {
     'foto1', 
     'foto2', 
   
+
   ],
   area: 220,
-  barrio: 'La Garzota',
-  precio: 220000
+  barrio: "La Garzota",
+  precio: 220000,
 };
 
 function App() {
