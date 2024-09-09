@@ -1,13 +1,13 @@
 import React from 'react';
-import HouseDetails from './home';
-import ContactForm from './inquiryForm';
+import DetallesCasa from './DetallesCasa';
+import FormularioContacto from './FormularioContacto';
+import './index.css';
 
-// Datos de ejemplo
-const house = {
-  photos: [
-    './assets/imagenes/1foto.jpg',
-    './assets/imagenes/2foto.jpg',
-    // Añade más fotos aquí
+const casa = {
+  fotos: [
+    'foto1', 
+    'foto2', 
+  
   ],
   area: 220,
   barrio: 'La Garzota',
@@ -17,8 +17,10 @@ const house = {
 function App() {
   return (
     <div className="App">
-      <HouseDetails house={house} />
-      <ContactForm />
+      <div className="contenedor">
+        <DetallesCasa casa={casa} />
+        <FormularioContacto />
+      </div>
     </div>
   );
 }
