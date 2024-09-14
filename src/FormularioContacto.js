@@ -18,7 +18,7 @@ const FormularioContacto = () => {
   const manejarEnvio = async (e) => {
     e.preventDefault();
     try {
-      const respuesta = await fetch('http://localhost:5000/enviar', {
+      const respuesta = await fetch('https://romulofull.github.io/ventadecasa/index.html/enviar', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
