@@ -1,0 +1,142 @@
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; 
+  overflow: hidden;
+}
+
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.detalles-casa {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.detalles-casa h1 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #333;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; 
+  margin-bottom: 10px;
+}
+
+.galeria img {
+  width: 10cm; 
+  height: 10cm; 
+  object-fit: cover; 
+  border: 2px solid #ddd; 
+  border-radius: 8px; 
+}
+
+
+.detalles {
+  margin-top: 10px;
+}
+
+.detalles p {
+  font-size: 18px; 
+  margin: 5px 0;
+  color: #555;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd; 
+  border-radius: 8px; 
+  background-color: #f9f9f9; 
+  max-width: 90%; 
+  box-sizing: border-box; 
+}
+
+
+form div {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px; 
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input, textarea {
+  width: 100%;
+  max-width: 400px; 
+  padding: 8px; 
+  font-size: 14px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical; 
+  min-height: 80px; 
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 14px; 
+  color: #fff;
+  background-color: #007bff; 
+  border: none;
+  border-radius: 4px; 
+  cursor: pointer;
+  transition: background-color 0.3s; 
+}
+
+button:hover {
+  background-color: #0056b3; 
+}
+
+
+@media (max-width: 600px) {
+  .galeria img {
+    width: 5cm; 
+    height: 5cm; 
+  }
+  
+  .detalles p {
+    font-size: 16px; 
+  }
+  
+  form {
+    padding: 5px; 
+  }
+  
+  input, textarea {
+    max-width: 100%; 
+  }
+}
