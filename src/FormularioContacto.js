@@ -18,7 +18,10 @@ const FormularioContacto = () => {
   const manejarEnvio = async (e) => {
     e.preventDefault();
     try {
+
       const respuesta = await fetch('https://venta1decasas.vercel.app/enviar', { // Cambia la URL a la ruta correcta del backend
+
+    
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
